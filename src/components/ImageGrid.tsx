@@ -28,7 +28,7 @@ const ImageGrid = () => {
       {/* Logo at the top */}
       <div className="logo-container">
         <img
-          src="https://cdn.discordapp.com/attachments/1288781193172488256/1288856362436001873/image_2024-09-26_143400473-removebg-preview.png?ex=66faa906&is=66f95786&hm=7e473305b5a7d7af2af0d671b358c2b50a201abfe9b565252e2b79e4c0ade809&" // Replace with your logo's link
+          src="https://cdn.discordapp.com/attachments/1288781193172488256/1288856362436001873/image_2024-09-26_143400473-removebg-preview.png?ex=66fb51c6&is=66fa0046&hm=b6af430650f3ce5557202e9f106905ab1c692ba7f55be03994d8df15ccb6b9be&"
           alt="Logo"
           className="logo"
         />
