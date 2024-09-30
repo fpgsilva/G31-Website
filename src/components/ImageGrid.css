@@ -1,7 +1,9 @@
 /* General page container */
 .page-container {
-    text-align: center;
-    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9B59B6;
+    overflow-y: scroll
   }
   
   /* Logo container */
@@ -20,10 +22,26 @@
   
   /* Group name styling */
   .group-name h1 {
+    width:100%;
+    text-align: center;
     font-size: 48px;
-    color: green;
+    color: gold;
     padding: 10px;
     display: inline-block;
+    
+  }
+
+  .group-desc {
+    width:80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(59, 217, 206);
+    border-radius: 50px;
+    
   }
   
   /* Student grid layout */
@@ -32,6 +50,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px;
+    
   }
   
   .image-item {
@@ -46,7 +65,7 @@
     width: 250px;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 500px;
   }
   
   /* Student name and number */
@@ -54,4 +73,14 @@
     font-size: 16px;
     margin-top: 10px;
     color: black;
+    font-weight: 600;
   }
+
+  .version-description { 
+    z-index: 1;
+    position: absolute; 
+    bottom: 10px; /* Distance from the bottom */ 
+    right: 10px;  /* Distance from the right */ 
+    background-color: transparent; /* Optional: background for better visibility */ 
+    padding: 10px; /* Optional: padding for aesthetics */ 
+} 

@@ -2,7 +2,8 @@ import "./ImageGrid.css"; // Importing the CSS file
 
 const ImageGrid = () => {
   const alunos = [
-    { name: "Diogo Pinto", imageUrl: "link_to_image1.jpg", number: "67535" },
+    { name: "Diogo Pinto", imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYIRIPFI7BnaFgEJyon4_vceBFkhJMg_AHQ&s",
+        number: "67535" },
     {
       name: "Francisco Silva",
       imageUrl:
@@ -28,7 +29,7 @@ const ImageGrid = () => {
       {/* Logo at the top */}
       <div className="logo-container">
         <img
-          src="https://ibb.co/SvXsS1R"
+          src="https://i.ibb.co/PCZmkbw/track-and-taste-logo-transparent.png"
           alt="Logo"
           className="logo"
         />
@@ -36,7 +37,12 @@ const ImageGrid = () => {
 
       {/* Group name */}
       <div className="group-name">
-        <h1>GRUPO 31</h1>
+        <h1>GROUP 31</h1>
+      </div>
+
+      <div className="group-desc">
+        <p>With this project of IPM we aim to build a website in which a user can find easily new recipes, among other things.</p>
+        <p>This is the website where you can find the reports of the diferent phases of this project, along with the link to the application in question.</p>
       </div>
 
       {/* Student details grid */}
@@ -53,7 +59,11 @@ const ImageGrid = () => {
           </div>
         ))}
       </div>
+        <div className="version-description">
+        <p>v 0.0.1</p>
+        </div>
     </div>
+    
   );
 };
 
