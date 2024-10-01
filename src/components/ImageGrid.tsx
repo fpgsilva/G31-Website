@@ -1,6 +1,6 @@
 import "./ImageGrid.css"; // Importing the CSS file
-import reportimage1 from '../assets/Cover-Report-1.png';
-import reportfile1 from '../assets/IPM-G31-Phase 1.pdf';
+import reportimage1 from '/src/assets/Cover-Report-1.png';
+import reportfile1 from '/src/assets/IPM-G31-Phase 1.pdf';
 
 const ImageGrid = () => {
   const alunos = [
@@ -78,7 +78,7 @@ const ImageGrid = () => {
         ))}
       </div>
         <div className="version-description">
-        <p>v 0.0.2</p>
+        <p>v 0.0.3</p>
         </div>
     </div>
     
