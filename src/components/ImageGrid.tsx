@@ -1,4 +1,6 @@
 import "./ImageGrid.css"; // Importing the CSS file
+import reportimage1 from '../assets/Cover-Report-1.png';
+import reportfile1 from '../assets/IPM-G31-Phase 1.pdf';
 
 const ImageGrid = () => {
   const alunos = [
@@ -23,6 +25,19 @@ const ImageGrid = () => {
       number: "63703",
     },
   ];
+
+  const reports = [
+    { title: "Report 1", imageImport:reportimage1, file: reportfile1},
+  ];
+
+  const handleImageClick = (index: number, file: string): void => {
+    // Example: log the report title
+    
+
+    
+    // Your custom logic can go here
+    alert(`Image ${index + 1}`);
+  };
 
   return (
     <div className="page-container">
@@ -57,6 +72,18 @@ const ImageGrid = () => {
             <p className="aluno-description">{aluno.name}</p>
             <p className="aluno-description">{aluno.number}</p>
           </div>
+        ))}
+      </div>
+
+      <div className="report-grid">
+        {reports.map((report, index) => (
+            <div className="report-item" 
+            key={index}>
+                <p className="report-Title">{report.title}</p>
+                <img src={report.imageImport} alt={report.title} className="report-image"/>
+                <p></p>
+                <a href="../assets/IPM-G31-Phase 1.pdf" download className="download-button">Download Report {index + 1}</a>
+            </div>
         ))}
       </div>
         <div className="version-description">
