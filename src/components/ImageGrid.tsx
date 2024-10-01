@@ -30,15 +30,6 @@ const ImageGrid = () => {
     { title: "Report 1", imageImport:reportimage1, file: reportfile1},
   ];
 
-  const handleImageClick = (index: number, file: string): void => {
-    // Example: log the report title
-    
-
-    
-    // Your custom logic can go here
-    alert(`Image ${index + 1}`);
-  };
-
   return (
     <div className="page-container">
       {/* Logo at the top */}
