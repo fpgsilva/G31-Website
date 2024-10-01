@@ -88,7 +88,7 @@ const ImageGrid = () => {
         <p></p>
 
         <div className="version-description">
-        <p>v 0.0.4</p>
+        <p>v 0.0.5</p>
         </div>
     </div>
     
