@@ -1,6 +1,6 @@
 import "./ImageGrid.css"; // Importing the CSS file
-import reportimage1 from '/Cover-Report-1.png';
-import reportfile1 from '/IPM-G31-Phase 1.pdf';
+//import reportimage1 from 'Cover-Report-1.png';
+//import reportfile1 from 'IPM-G31-Phase 1.pdf';
 
 const ImageGrid = () => {
   const alunos = [
@@ -27,7 +27,7 @@ const ImageGrid = () => {
   ];
 
   const reports = [
-    { title: "Report 1", imageImport:reportimage1, file: reportfile1},
+    { title: "Report 1", imageImport:"Cover-Report-1.png", file: "IPM-G31-Phase 1.pdf"},
   ];
 
   return (
@@ -73,7 +73,7 @@ const ImageGrid = () => {
                 <p className="report-Title">{report.title}</p>
                 <img src={report.imageImport} alt={report.title} className="report-image"/>
                 <p></p>
-                <a href="/IPM-G31-Phase 1.pdf" download className="download-button">Download Report {index + 1}</a>
+                <a href="IPM-G31-Phase 1.pdf" download className="download-button">Download Report {index + 1}</a>
             </div>
         ))}
       </div>
@@ -88,7 +88,7 @@ const ImageGrid = () => {
         <p></p>
 
         <div className="version-description">
-        <p>v 0.0.5</p>
+        <p>v 0.0.6</p>
         </div>
     </div>
     
