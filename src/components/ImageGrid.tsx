@@ -1,6 +1,6 @@
 import "./ImageGrid.css"; // Importing the CSS file
-import reportimage1 from '/src/assets/Cover-Report-1.png';
-import reportfile1 from '/src/assets/IPM-G31-Phase 1.pdf';
+import reportimage1 from '/Cover-Report-1.png';
+import reportfile1 from '/IPM-G31-Phase 1.pdf';
 
 const ImageGrid = () => {
   const alunos = [
@@ -73,18 +73,22 @@ const ImageGrid = () => {
                 <p className="report-Title">{report.title}</p>
                 <img src={report.imageImport} alt={report.title} className="report-image"/>
                 <p></p>
-                <a href="../assets/IPM-G31-Phase 1.pdf" download className="download-button">Download Report {index + 1}</a>
+                <a href="/IPM-G31-Phase 1.pdf" download className="download-button">Download Report {index + 1}</a>
             </div>
         ))}
       </div>
 
         {/* this is a comment */}
         {/* Site display */}
+        <div className="group-name">
+        <h1>Our Website - Track and Taste</h1>
+        </div>
 
-
+        <a className="goToSite" href="https://pt.wikipedia.org/wiki/Trollface">Go to Track and Taste</a>
+        <p></p>
 
         <div className="version-description">
-        <p>v 0.0.3</p>
+        <p>v 0.0.4</p>
         </div>
     </div>
     

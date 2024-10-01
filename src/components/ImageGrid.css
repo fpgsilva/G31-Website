@@ -123,3 +123,16 @@
     font-weight: bold;
     background-color: rgb(247, 161, 152);
   }
+
+  .goToSite {
+    
+    width:50%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 48px;
+    color: gold;
+    padding: 10px;
+    display: block;    
+    background-color: salmon;
+    border-radius: 50px;
+  }
