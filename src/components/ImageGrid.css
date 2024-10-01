@@ -2,24 +2,39 @@
 .page-container {
     width: 100vw;
     height: 100vh;
-    background-color: #9B59B6;
-    overflow-y: scroll
+    background-color: #fff;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
   
   /* Logo container */
   .logo-container {
     display: flex;
-    
     justify-content: center; /* Centers the logo horizontally */
     align-items: center;
     margin-bottom: 20px;
   }
   
   .logo {
-    width: 400px; /* Adjust this to make the logo bigger */
+    width: 400px;
     height: auto;
+    -webkit-user-drag: none;
+    transition: transform 0.3s ease-in-out;
   }
   
+  .logo:hover {
+    animation: rotate-animation 1s ease-in-out;
+    animation-fill-mode: forwards; /* Keep animation state after hover ends */
+  }
+  
+  @keyframes rotate-animation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); } 
+    50% { transform: rotate(-10deg); } 
+    75% { transform: rotate(5deg); } 
+    100% { transform: rotate(0deg); }
+  }
+
   /* Group name styling */
   .group-name h1 {
     width:100%;
@@ -28,7 +43,6 @@
     color: gold;
     padding: 10px;
     display: inline-block;
-    
   }
 
   .group-desc {
@@ -36,12 +50,13 @@
     margin-left: 10%;
     text-align: center;
     font-size: 20px;
-    color: black;
+    color: #232323;
     padding: 10px;
     display: inline-block;
-    background-color: rgb(59, 217, 206);
-    border-radius: 50px;
-    
+    background:  rgba(105, 226, 100, 0.608);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   /* Student grid layout */
@@ -81,8 +96,10 @@
     position: absolute; 
     bottom: 10px; /* Distance from the bottom */ 
     right: 10px;  /* Distance from the right */ 
-    background-color: transparent; /* Optional: background for better visibility */ 
-    padding: 10px; /* Optional: padding for aesthetics */ 
+    background-color: #232323; /* Optional: background for better visibility */ 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
 } 
 
   .report-grid {
@@ -121,11 +138,18 @@
     padding: 10px;
     border-radius: 8px;
     font-weight: bold;
-    background-color: rgb(247, 161, 152);
+    background-color: rgb(80, 207, 76);
+    color: inherit;       /* Use this to match parent text color */
+    transition: background-color 0.3s ease;
+  }
+
+  .download-button:hover {
+    background-color: rgb(60, 180, 60); /* Slightly darker green on hover */
+    color: inherit;                    /* Keep text color unchanged */
+    text-decoration: none;             /* Remove underline on hover */
   }
 
   .goToSite {
-    
     width:50%;
     margin-left: 25%;
     text-align: center;
@@ -133,6 +157,7 @@
     color: gold;
     padding: 10px;
     display: block;    
-    background-color: salmon;
+    background-color: #232323;
     border-radius: 50px;
+    margin-bottom: 120px;
   }
