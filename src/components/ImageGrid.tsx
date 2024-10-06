@@ -1,13 +1,12 @@
 import "./ImageGrid.css"; // Importing the CSS file
-//import reportimage1 from 'Cover-Report-1.png';
-//import reportfile1 from 'IPM-G31-Phase 1.pdf';
+import trabalhoDeIpmImageRodrigo from "../assets/trabalho-de-ipm.jpeg";
+import trabalhoDeIpmImageDiogo from "../assets/FotoDoCidadao_-_copia.jpg";
 
 const ImageGrid = () => {
   const alunos = [
     {
       name: "Diogo Pinto",
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYIRIPFI7BnaFgEJyon4_vceBFkhJMg_AHQ&s",
+      imageUrl: trabalhoDeIpmImageDiogo,
       number: "67535",
     },
     {
@@ -24,8 +23,7 @@ const ImageGrid = () => {
     },
     {
       name: "Rodrigo Costa",
-      imageUrl:
-        "https://cdn.discordapp.com/attachments/1286243088364474394/1289990939812696134/e691cf03-d70d-4ae6-a09b-4d4b38286ff7.jpg?ex=66fad52e&is=66f983ae&hm=e7116a9fc979a3394f6ae6561bef9b2281bd3c2865bbee875ade512a113b0151&",
+      imageUrl: trabalhoDeIpmImageRodrigo,
       number: "63703",
     },
   ];
