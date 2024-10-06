@@ -4,8 +4,12 @@ import "./ImageGrid.css"; // Importing the CSS file
 
 const ImageGrid = () => {
   const alunos = [
-    { name: "Diogo Pinto", imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYIRIPFI7BnaFgEJyon4_vceBFkhJMg_AHQ&s",
-        number: "67535" },
+    {
+      name: "Diogo Pinto",
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYIRIPFI7BnaFgEJyon4_vceBFkhJMg_AHQ&s",
+      number: "67535",
+    },
     {
       name: "Francisco Silva",
       imageUrl:
@@ -27,7 +31,11 @@ const ImageGrid = () => {
   ];
 
   const reports = [
-    { title: "Report 1", imageImport:"Cover-Report-1.png", file: "IPM-G31-Phase 1.pdf"},
+    {
+      title: "Report 1",
+      imageImport: "Cover-Report-1.png",
+      file: "IPM-G31-Phase 1.pdf",
+    },
   ];
 
   return (
@@ -47,8 +55,15 @@ const ImageGrid = () => {
       </div>
 
       <div className="group-desc">
-        <p>With this project of IPM we aim to build a website in which a user can find easily new recipes, among other things.</p>
-        <p>This is the website where you can find the reports of the diferent phases of this project, along with the link to the application in question.</p>
+        <p>
+          With this project of IPM we aim to build a website in which a user can
+          find easily new recipes, among other things.
+        </p>
+        <p>
+          This is the website where you can find the reports of the diferent
+          phases of this project, along with the link to the application in
+          question.
+        </p>
       </div>
 
       {/* Student details grid */}
@@ -68,30 +83,36 @@ const ImageGrid = () => {
 
       <div className="report-grid">
         {reports.map((report, index) => (
-            <div className="report-item" 
-            key={index}>
-                <p className="report-Title">{report.title}</p>
-                <img src={report.imageImport} alt={report.title} className="report-image"/>
-                <p></p>
-                <a href="IPM-G31-Phase 1.pdf" download className="download-button">Download Report {index + 1}</a>
-            </div>
+          <div className="report-item" key={index}>
+            <p className="report-Title">{report.title}</p>
+            <img
+              src={report.imageImport}
+              alt={report.title}
+              className="report-image"
+            />
+            <p></p>
+            <a href="IPM-G31-Phase 1.pdf" download className="download-button">
+              Download Report {index + 1}
+            </a>
+          </div>
         ))}
       </div>
 
-        {/* this is a comment */}
-        {/* Site display */}
-        <div className="group-name">
+      {/* this is a comment */}
+      {/* Site display */}
+      <div className="group-name">
         <h1>Our Website - Track and Taste</h1>
-        </div>
+      </div>
 
-        <a className="goToSite" href="https://pt.wikipedia.org/wiki/Trollface">Go to Track and Taste</a>
-        <p></p>
+      <a className="goToSite" href="https://pt.wikipedia.org/wiki/Trollface">
+        Go to Track and Taste
+      </a>
+      <p></p>
 
-        <div className="version-description">
+      <div className="version-description">
         <p>v 0.0.7</p>
-        </div>
+      </div>
     </div>
-    
   );
 };
 
