@@ -36,6 +36,11 @@ const ImageGrid = () => {
       imageImport: "Cover-Report-1.png",
       file: "IPM-G31-Phase 1.pdf",
     },
+    {
+      title: "Report 2",
+      imageImport: "Cover-Report-2.png",
+      file: "IPM-G31-Phase 2.pdf",
+    },
   ];
 
   return (
@@ -91,7 +96,7 @@ const ImageGrid = () => {
               className="report-image"
             />
             <p></p>
-            <a href="IPM-G31-Phase 1.pdf" download className="download-button">
+            <a href={report.file} download className="download-button">
               Download Report {index + 1}
             </a>
           </div>
@@ -104,13 +109,13 @@ const ImageGrid = () => {
         <h1>Our Website - Track and Taste</h1>
       </div>
 
-      <a className="goToSite" href="https://pt.wikipedia.org/wiki/Trollface">
+      <a className="goToSite" href="https://fpgsilva.github.io/TrackAndTaste/">
         Go to Track and Taste
       </a>
       <p></p>
 
       <div className="version-description">
-        <p>v 0.0.7</p>
+        <p>v 0.0.8</p>
       </div>
     </div>
   );
