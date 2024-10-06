@@ -1,29 +1,26 @@
 import "./ImageGrid.css"; // Importing the CSS file
-import trabalhoDeIpmImageRodrigo from "../assets/trabalho-de-ipm.jpeg";
-import trabalhoDeIpmImageDiogo from "../assets/FotoDoCidadao_-_copia.jpg";
 
 const ImageGrid = () => {
   const alunos = [
     {
       name: "Diogo Pinto",
-      imageUrl: trabalhoDeIpmImageDiogo,
+      imageUrl: "FotoDoCidadao_-_copia.jpg",
       number: "67535",
     },
     {
       name: "Francisco Silva",
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYIRIPFI7BnaFgEJyon4_vceBFkhJMg_AHQ&s",
+        "foto_FS.jpg",
       number: "70525",
     },
     {
       name: "Martim Latas",
-      imageUrl:
-        "https://cdn.discordapp.com/attachments/1286243088364474394/1289988349590900838/mirav2.png?ex=66fad2c5&is=66f98145&hm=f1eea7e625b517e300ee10d69a51aaba6c001838ddd1c8f947fd3165c3b93c20&",
+      imageUrl: "foto_ML.png",
       number: "70596",
     },
     {
       name: "Rodrigo Costa",
-      imageUrl: trabalhoDeIpmImageRodrigo,
+      imageUrl: "trabalho-de-ipm.jpeg",
       number: "63703",
     },
   ];
@@ -113,7 +110,7 @@ const ImageGrid = () => {
       <p></p>
 
       <div className="version-description">
-        <p>v 0.0.8</p>
+        <p>v 0.1.0</p>
       </div>
     </div>
   );

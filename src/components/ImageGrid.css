@@ -78,7 +78,7 @@
   /* Student image styling */
   .aluno-image {
     width: 250px;
-    height: auto;
+    height: 250px;
     object-fit: cover;
     border-radius: 500px;
   }
