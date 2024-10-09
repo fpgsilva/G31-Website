@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.image-wrapper {
+    display: flex;
+    width: calc(100% * 23.5); /* Adjust width to fit all images (original + clones) */
+    animation: scroll 120s linear infinite;
+}
+
+.image-wrapper img {
+    height: 100vh; /* Image height */
+    width: auto;   /* Maintain original aspect ratio */
+    margin-right: -2px; /* To eliminate space between images */
+    transition: filter 0.5s ease-in-out; /* Smooth transition for blur effect */
+}
+
+/* Animation for smooth, infinite scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-25%); /* Move left by 25% of the total width of the images */
+    }
+}

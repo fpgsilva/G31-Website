@@ -1,4 +1,5 @@
 import "./ImageGrid.css"; // Importing the CSS file
+import ImageSlider from "./ImageSlider";
 
 const ImageGrid = () => {
   const alunos = [
@@ -39,14 +40,23 @@ const ImageGrid = () => {
   ];
 
   return (
+    
     <div className="page-container">
       {/* Logo at the top */}
       <div className="logo-container">
         <img
-          src="https://i.ibb.co/PCZmkbw/track-and-taste-logo-transparent.png"
+          src="track-and-taste-logo-Photoroom.png"
           alt="Logo"
           className="logo"
         />
+      </div>
+      
+      <div className="arrow-container">
+          <i className="arrow"/>
+      </div>
+
+      <div>
+        <ImageSlider/>
       </div>
 
       {/* Group name */}
@@ -98,7 +108,6 @@ const ImageGrid = () => {
         ))}
       </div>
 
-      {/* this is a comment */}
       {/* Site display */}
       <div className="group-name">
         <h1>Our Website - Track and Taste</h1>
@@ -107,10 +116,9 @@ const ImageGrid = () => {
       <a className="goToSite" href="https://fpgsilva.github.io/TrackAndTaste/">
         Go to Track and Taste
       </a>
-      <p></p>
 
       <div className="version-description">
-        <p>v 0.1.0</p>
+        <p>v 0.1.1</p>
       </div>
     </div>
   );
