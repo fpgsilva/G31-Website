@@ -101,6 +101,15 @@ const ImageGrid = () => {
               className="report-image"
             />
             <p></p>
+            {/* Preview button */}
+            <a 
+              href={report.file} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="preview-button"
+            >
+              Preview Report {index + 1}
+            </a>
             <a href={report.file} download className="download-button">
               Download Report {index + 1}
             </a>
