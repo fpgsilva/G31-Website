@@ -13,7 +13,7 @@ const ImageGrid = () => {
       name: "Francisco Silva",
       imageUrl: "foto_FS.jpg",
       number: "70525",
-      goodDesign: "cenas cool yh do chico pdf",
+      goodDesign: "IPM - FS 70525.pdf",
     },
     {
       name: "Martim Latas",
