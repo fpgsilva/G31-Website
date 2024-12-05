@@ -55,6 +55,11 @@ const ImageGrid = () => {
       imageImport: "Cover-Report-5.png",
       file: "IPM-G31-Phase 5.pdf",
     },
+    {
+      title: "Report 6",
+      imageImport: "Cover-Report-6.png",
+      file: "IPM-G31-Phase 6.pdf",
+    },
   ];
 
   return (
