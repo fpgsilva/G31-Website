@@ -5,11 +5,13 @@ body {
 .navbar {
   background: linear-gradient(90deg, rgb(80, 207, 76) 15%, rgb(26, 23, 23) 70%);
   height: 100px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position:absolute;
+  top: 0px;
 }
 
 .navbar-container {
@@ -55,5 +57,6 @@ body {
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  cursor: pointer;
 }
 

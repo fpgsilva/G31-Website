@@ -99,7 +99,7 @@ const ImageGrid = () => {
       </div>
 
       {/* Student details grid */}
-      <div className="image-grid">
+      <div id="team" className="image-grid">
         {alunos.map((aluno, index) => (
           <div className="image-item" key={index}>
             <img
@@ -128,7 +128,7 @@ const ImageGrid = () => {
         ))}
       </div>
 
-      <div className="report-grid">
+      <div id="report" className="report-grid">
         {reports.map((report, index) => (
           <div className="report-item" key={index}>
             <p className="report-Title">{report.title}</p>

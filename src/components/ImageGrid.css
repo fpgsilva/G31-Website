@@ -21,6 +21,7 @@
   border-radius: 50%;
   box-shadow: 0 4px 10px #232323;
   z-index: 1;
+  margin-top: 100px;
 }
 
 .logo {
@@ -75,6 +76,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 20px;
+  padding-top: 150px;
 }
 
 .image-item {
@@ -123,6 +125,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 100px 20px 20px; 
+  padding-top: 100px;
 }
 
 .report-item {
@@ -204,6 +207,7 @@ text-decoration: none;
   transform: translateX(-50%);
   z-index: 1;
   animation: bob .8s infinite alternate;
+  margin-top: 100px;
 }
 
 .arrow {

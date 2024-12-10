@@ -5,10 +5,10 @@ function App() {
   return (
     <>
       <div>
-        <Navbar/>
+        <ImageGrid/>
       </div>
       <div>
-        <ImageGrid/>
+        <Navbar/>
       </div>
     </>
   );

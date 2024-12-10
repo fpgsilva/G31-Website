@@ -4,8 +4,7 @@ function ImageSlider() {
 
 
   return (
-    <>
-      <div className="image-carousel">
+      <div id="top" className="image-carousel">
         <div className="image-wrapper">
             <img src="9cf16139-5723-4876-a061-58daa7b80630-bestdishes_massaman.jpg" alt="Image 1"/>
             <img src="20230908-POTLUCK-CLUB-027520.png" alt="Image 2"/>
@@ -22,7 +21,6 @@ function ImageSlider() {
             <img src="4d8b709a-740c-416b-a915-a1de9b5d716e-bunnychow_SA.jpg" alt="Image 3"/>
         </div>
     </div>
-    </>
   );
 }
 
